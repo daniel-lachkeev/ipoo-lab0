@@ -1,3 +1,6 @@
+/**
+ * Size - classe que representa o tamanho de uma chávena
+ */
 public enum Size {
     SMALL(32, 36, "Pequeno", 'S'),
     MEDIUM(37, 44, "Médio", 'M'),
@@ -8,6 +11,13 @@ public enum Size {
     private final int maxValue;
     private final char code;
     
+    /**
+     * Objeto Size
+     * @param minValue valor mínimo
+     * @param maxValue valor máximo
+     * @param description descrição da chávena
+     * @param code código
+     */
     private Size(int minValue, int maxValue, String description, char code) {
         this.description = description;
         this.minValue = minValue;
